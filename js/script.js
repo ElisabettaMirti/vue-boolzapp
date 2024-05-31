@@ -165,11 +165,15 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
             
+            singleChat: document.querySelectorAll("li")
         }
     },
     methods: {
+        selectedChat: function(item){
+            item.classList.toggle("active-contact");
+        }
     }
 }).mount('#app');
 
