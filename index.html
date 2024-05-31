@@ -62,12 +62,14 @@
             <section class="contacts">
                 <nav>
                     <ul>
-                        <li>
+                        <li v-for="(contact, index) in contacts" :key="index" >
                             <div class="contact-propic">
-                                <img src="img/avatar_1.jpg" alt="">
+                                <img :src="contact.avatar" alt="avatar">
                             </div>
                             <div class="contact-chat-info">
-                                <p class="contact-name">Michele</p>
+                                <p class="contact-name">
+                                    {{ contact.name }}
+                                </p>
                                 <p class="contact-last-msg">Ultimo messaggio inviato</p>
                             </div>
                             <div class="time">
