@@ -166,14 +166,13 @@ createApp({
                     ],
                 }
             ],
-            
-            singleChat: document.querySelectorAll("li")
+
+            activeChat: 1
+
         }
     },
     methods: {
-        selectedChat: function(item){
-            item.classList.toggle("active-contact");
-        }
+        
     }
 }).mount('#app');
 

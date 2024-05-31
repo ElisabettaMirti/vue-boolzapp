@@ -62,7 +62,7 @@
             <section class="contacts">
                 <nav>
                     <ul>
-                        <li v-for="(contact, index) in contacts" :key="index" @click="selectedChat(singleChat)">
+                        <li v-for="(contact, index) in contacts" :key="index">
                             <div class="contact-propic">
                                 <img :src="contact.avatar" alt="avatar">
                             </div>
@@ -90,17 +90,34 @@
 
         <div class="main-content">
             <header>
-                <div class="chat-friend"></div>
-                <div class="chat-options"></div>
+                <div class="chat-friend">
+                    <div class="active-chat-propic">
+                        <img src="img/avatar_1.jpg" alt="">
+                    </div>
+                    <div class="active-chat-info">
+                        <p>Michele</p>
+                        <p class="last-login">Ultimo accesso oggi alle 12:00</p>
+                    </div>
+                </div>
+
+                <div class="chat-options">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
             </header>
             <main></main>
 
             <footer>
-                <div class="emoji"></div>
+                <div class="emoji">
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
                 <div class="my-message">
                     <input type="text" placeholder="Scrivi un messaggio">
                 </div>
-                <div class="mic"></div>
+                <div class="mic">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
             </footer>
         </div>
         
