@@ -10,6 +10,8 @@
     font-style: normal;
 }
 
+ /* SEZIONE DI SFONDO */
+
 div.bg{
     position: relative;
 }
@@ -26,9 +28,34 @@ div.grey-background{
     height: 80vh;
 }
 
+/* SEZIONE DIV#APP */
+
 div#app{
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     left: 50%;
     transform: translate(-50%);
+    width: 80%;
+    height: 95vh;
+    display: flex;
 }
+
+
+/* SEZIONE ASIDE */
+
+aside{
+    width: 30%;
+    height: 100%;
+}
+
+
+
+/* SEZIONE MAIN-CONTENT */
+
+
+div.main-content{
+    width: 70%;
+    height: 100%;
+}
+
+
