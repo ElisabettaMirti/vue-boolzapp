@@ -107,9 +107,11 @@
                 </div>
             </header>
             <main>
-                <ul>
-                    <li>messaggio</li>
-                </ul>
+                <div class="chat-area">
+                    <article v-for="(message, index) in contacts[activeChatIndex].messages" :class="message.status">
+                        {{ message.message }}
+                    </article>
+                </div>
             </main>
 
             <footer>

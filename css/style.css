@@ -249,23 +249,28 @@ div.chat-options>i{
 
 /* SECTION MAIN  */
 
-main>ul {
+div.chat-area {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 4rem 5rem;
 }
 
-main ul>li{
-    padding: .5rem;
-    font: .8rem;
+.chat-area>article{
+    padding: 1.1rem .9rem;
+    font-size: .85rem;
+    width: 40%;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
 }
 
-li.sent{
+article.sent{
     background-color: #d5f9ba;
+    align-self: self-end;
 }
 
-li.receveid{
+article.received{
     background-color: #ffffff;
+    align-self: self-start;
 }
 
 
