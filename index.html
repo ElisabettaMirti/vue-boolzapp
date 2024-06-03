@@ -92,10 +92,10 @@
             <header>
                 <div class="chat-friend">
                     <div class="active-chat-propic">
-                        <img src="img/avatar_1.jpg" alt="propic contatto" class="propic-format">
+                        <img :src="contacts[activeChatIndex].avatar" alt="propic contatto" class="propic-format">
                     </div>
                     <div class="active-chat-info">
-                        <p>Michele</p>
+                        <p>{{ contacts[activeChatIndex].name }}</p>
                         <p class="last-login">Ultimo accesso oggi alle 12:00</p>
                     </div>
                 </div>

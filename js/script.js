@@ -194,6 +194,11 @@ createApp({
             let newFormat = date.slice(11, 16);
             return newFormat;
         }
+
+        // searchContact: function(searchedName){
+        //     let nameToSearch = this.contacts.name;
+            
+        // }
     }
 }).mount('#app');
 
