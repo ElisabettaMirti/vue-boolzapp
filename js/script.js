@@ -167,7 +167,8 @@ createApp({
                 }
             ],
 
-            activeChatIndex: 1
+            activeChatIndex : 0,
+            newMessage : ''
 
         }
     },

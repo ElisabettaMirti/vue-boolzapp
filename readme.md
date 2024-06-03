@@ -3,7 +3,7 @@ Replica della grafica con la possibilità di avere messaggi scritti dall’utent
 Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, visualizzare nome e immagine di ogni contatto
 
 >metto un ul nell'aside con un ciclo v-for per portare i contatti come li
-    >con un ternario assegno la classe active alla chat in uso
+
 
 
 
@@ -16,6 +16,12 @@ Click sul contatto mostra la conversazione del contatto cliccato
 Milestone 3
 Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando “enter” il testo viene aggiunto al thread sopra, come messaggio verde
 Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo.
+
+>inserire nei data una variabile newMessage
+>associarla con v-model all'input
+>creare una funzione che, una volta scritto il messaggio, premendo invio faccia comparire il messaggio nell'area di chat con un push
+>creare una funzione con setInterval per attendere un paio di secondi e poi pushare messaggio di risposta nell'array di messages, preimpostato con "ok"
+
 
 Milestone 4
 Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
