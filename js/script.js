@@ -188,6 +188,11 @@ createApp({
                 let autoReply = {date: new Date(), message: 'Ok', status: 'received'};
                 chat.push(autoReply);
             }, 2000);
+        },
+
+        formatTime: function(date){
+            let newFormat = date.slice(11, 16);
+            return newFormat;
         }
     }
 }).mount('#app');
