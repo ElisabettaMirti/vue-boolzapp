@@ -260,6 +260,13 @@ main ul>li{
     font: .8rem;
 }
 
+li.sent{
+    background-color: #d5f9ba;
+}
+
+li.receveid{
+    background-color: #ffffff;
+}
 
 
 
