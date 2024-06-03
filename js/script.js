@@ -167,12 +167,15 @@ createApp({
                 }
             ],
 
-            activeChat: 1
+            activeChatIndex: 1
 
         }
     },
     methods: {
-        
+        activeChatSelected: function(index){
+            this.newMessage = '';
+            this.activeChatIndex = index;
+        }
     }
 }).mount('#app');
 

@@ -24,7 +24,7 @@
                 
                 <div class="my-profile-container">
                     <div class="propic">
-                        <img src="img/avatar_io.jpg" alt="foto mia">
+                        <img src="img/avatar_io.jpg" alt="foto mia" class="propic-format">
                     </div>
                     <div>
                         <p>Sofia</p>
@@ -62,9 +62,9 @@
             <section class="contacts">
                 <nav>
                     <ul>
-                        <li v-for="(contact, index) in contacts" :key="index">
+                        <li v-for="(contact, index) in contacts" :key="index" @click="activeChatSelected(index)">
                             <div class="contact-propic">
-                                <img :src="contact.avatar" alt="avatar">
+                                <img :src="contact.avatar" alt="avatar" class="propic-format">
                             </div>
                             <div class="contact-chat-info">
                                 <p class="contact-name">
@@ -92,7 +92,7 @@
             <header>
                 <div class="chat-friend">
                     <div class="active-chat-propic">
-                        <img src="img/avatar_1.jpg" alt="">
+                        <img src="img/avatar_1.jpg" alt="propic contatto" class="propic-format">
                     </div>
                     <div class="active-chat-info">
                         <p>Michele</p>
@@ -106,7 +106,11 @@
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
             </header>
-            <main></main>
+            <main>
+                <ul>
+                    <li>messaggio</li>
+                </ul>
+            </main>
 
             <footer>
                 <div class="emoji">
