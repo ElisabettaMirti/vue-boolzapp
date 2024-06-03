@@ -182,6 +182,12 @@ createApp({
             let chat = this.contacts[this.activeChatIndex].messages;
             let newMsg = {date: new Date(), message: this.newMessage, status: 'sent'};
             chat.push(newMsg);
+            this.newMessage = '';
+
+            setTimeout(() => {
+                let autoReply = {date: new Date(), message: 'Ok', status: 'received'};
+                chat.push(autoReply);
+            }, 2000);
         }
     }
 }).mount('#app');
