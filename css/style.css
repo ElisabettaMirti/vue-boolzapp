@@ -256,8 +256,7 @@ div.chat-area {
 }
 
 .chat-area>article{
-    padding: 1.1rem .9rem;
-    font-size: .85rem;
+    padding: .3rem;
     width: 40%;
     margin-bottom: .5rem;
     border-radius: .5rem;
@@ -271,6 +270,17 @@ article.sent{
 article.received{
     background-color: #ffffff;
     align-self: self-start;
+}
+
+p.message{
+    font-size: .85rem;
+    padding: .35rem .9rem 0 .9rem;
+}
+
+p.message-time{
+    font-size: .6rem;
+    color: #627375;
+    text-align: end;
 }
 
 

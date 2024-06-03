@@ -109,7 +109,11 @@
             <main>
                 <div class="chat-area">
                     <article v-for="(message, index) in contacts[activeChatIndex].messages" :class="message.status">
-                        {{ message.message }}
+                        <div class="active-message">
+                            <p class="message">{{ message.message }}</p>
+                            <p class="message-time">12:13</p>
+                        </div>
+
                     </article>
                 </div>
             </main>
