@@ -176,6 +176,12 @@ createApp({
         activeChatSelected: function(index){
             this.newMessage = '';
             this.activeChatIndex = index;
+        },
+
+        newMessageInChat: function(){
+            let chat = this.contacts[this.activeChatIndex].messages;
+            let newMsg = {date: new Date(), message: this.newMessage, status: 'sent'};
+            chat.push(newMsg);
         }
     }
 }).mount('#app');
