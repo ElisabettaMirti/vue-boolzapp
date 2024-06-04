@@ -62,7 +62,7 @@
             <section class="contacts">
                 <nav>
                     <ul>
-                        <li v-for="(contact, index) in contacts" :key="index" @click="activeChatSelected(index)" v-show="searchContact(contact)">
+                        <li v-for="(contact, index) in contacts" :key="index" @click="activeChatSelected(index)" v-show="searchContact(contact)" :class="activeChatIndex === index ? 'active' : ''">
                             <div class="contact-propic">
                                 <img :src="contact.avatar" alt="avatar" class="propic-format">
                             </div>

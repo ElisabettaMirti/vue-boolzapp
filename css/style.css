@@ -168,6 +168,10 @@ li:hover{
     background-color: #e9ebeb;       
 }
 
+li.active{
+    background-color: #dfe1e1;
+}
+
 div.contact-propic{
     width: 50px;
     height: 50px;
