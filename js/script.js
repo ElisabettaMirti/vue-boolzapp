@@ -169,7 +169,6 @@ createApp({
 
             activeChatIndex : 0,
             newMessage : '',
-            contactsCopy: Object.assign({}, this.contacts),
             nameToSearch: ''
 
         }
@@ -181,7 +180,7 @@ createApp({
         },
 
         newMessageInChat: function(){
-            let chat = this.contactsCopy[this.activeChatIndex].messages;
+            let chat = this.contacts[this.activeChatIndex].messages;
             let newMsg = {date: new Date(), message: this.newMessage, status: 'sent'};
             chat.push(newMsg);
             this.newMessage = '';
@@ -197,15 +196,13 @@ createApp({
             return newFormat;
         },
 
-        searchContact: function(nameToFind, arrayToSearch){
-            
-            nameToFind = arrayToSearch.name.filter((nameToSearch) =>{
-                if (nameToSearch.search(nameToFind)){
-                    return nameToSearch;
+        searchContact: function(contactToFind){
+                if (contactToFind.name.toLowerCase().includes(this.nameToSearch.toLowerCase())){
+                    return true;
+                } else{
+                    return false;
                 }
-            });
-            
-    }
+        }
     }
 }).mount('#app');
 
