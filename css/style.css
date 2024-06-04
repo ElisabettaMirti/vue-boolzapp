@@ -164,7 +164,7 @@ section.contacts ul>li{
     justify-content: space-between;
 }
 
-li.active-contact{
+li:hover{
     background-color: #e9ebeb;       
 }
 
