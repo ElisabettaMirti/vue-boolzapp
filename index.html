@@ -54,7 +54,7 @@
                     <button type="submit">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="contactToFind" @keyup.enter="searchContact(contactToFind)">
                 </div>
                 
             </section>
@@ -62,7 +62,7 @@
             <section class="contacts">
                 <nav>
                     <ul>
-                        <li v-for="(contact, index) in contacts" :key="index" @click="activeChatSelected(index)">
+                        <li v-for="(contact, index) in contacts" :key="index" @click="activeChatSelected(index)" v-show="contactToFind">
                             <div class="contact-propic">
                                 <img :src="contact.avatar" alt="avatar" class="propic-format">
                             </div>

@@ -168,7 +168,9 @@ createApp({
             ],
 
             activeChatIndex : 0,
-            newMessage : ''
+            newMessage : '',
+            contactsCopy: [],
+            contactToFind: ''
 
         }
     },
@@ -193,12 +195,17 @@ createApp({
         formatTime: function(date){
             let newFormat = date.slice(11, 16);
             return newFormat;
-        }
+        },
 
-        // searchContact: function(searchedName){
-        //     let nameToSearch = this.contacts.name;
+        searchContact: function(nameToFind){
+            contactsCopy = [{...contacts}]
+            nameToFind = contactsCopy.name.filter((nameToSearch) =>{
+                if (nameToSearch.includes(nameToFind)){
+                    return nameToFind;
+                }
+            });
             
-        // }
+    }
     }
 }).mount('#app');
 
